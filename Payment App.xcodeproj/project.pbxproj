@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		D1D7B80B1F060CB300FB2869 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7B80A1F060CB300FB2869 /* main.m */; };
+		D1D7B8131F060EDB00FB2869 /* PaymentGateway.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7B8121F060EDB00FB2869 /* PaymentGateway.m */; };
+		D1D7B8161F060FB900FB2869 /* StripePaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7B8151F060FB900FB2869 /* StripePaymentService.m */; };
+		D1D7B8191F060FC600FB2869 /* PaypalPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7B8181F060FC600FB2869 /* PaypalPaymentService.m */; };
+		D1D7B81C1F060FCF00FB2869 /* AmazonPaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D7B81B1F060FCF00FB2869 /* AmazonPaymentService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D1D7B8071F060CB300FB2869 /* Payments */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Payments; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D7B8071F060CB300FB2869 /* Payment Apps */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Payment Apps"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1D7B80A1F060CB300FB2869 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D1D7B8111F060EDB00FB2869 /* PaymentGateway.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentGateway.h; sourceTree = "<group>"; };
+		D1D7B8121F060EDB00FB2869 /* PaymentGateway.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentGateway.m; sourceTree = "<group>"; };
+		D1D7B8141F060FB900FB2869 /* StripePaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StripePaymentService.h; sourceTree = "<group>"; };
+		D1D7B8151F060FB900FB2869 /* StripePaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StripePaymentService.m; sourceTree = "<group>"; };
+		D1D7B8171F060FC600FB2869 /* PaypalPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaypalPaymentService.h; sourceTree = "<group>"; };
+		D1D7B8181F060FC600FB2869 /* PaypalPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaypalPaymentService.m; sourceTree = "<group>"; };
+		D1D7B81A1F060FCF00FB2869 /* AmazonPaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmazonPaymentService.h; sourceTree = "<group>"; };
+		D1D7B81B1F060FCF00FB2869 /* AmazonPaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmazonPaymentService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +53,7 @@
 		D1D7B7FE1F060CB300FB2869 = {
 			isa = PBXGroup;
 			children = (
-				D1D7B8091F060CB300FB2869 /* Payments */,
+				D1D7B8091F060CB300FB2869 /* Payment App */,
 				D1D7B8081F060CB300FB2869 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +61,34 @@
 		D1D7B8081F060CB300FB2869 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1D7B8071F060CB300FB2869 /* Payments */,
+				D1D7B8071F060CB300FB2869 /* Payment Apps */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1D7B8091F060CB300FB2869 /* Payments */ = {
+		D1D7B8091F060CB300FB2869 /* Payment App */ = {
 			isa = PBXGroup;
 			children = (
 				D1D7B80A1F060CB300FB2869 /* main.m */,
+				D1D7B8111F060EDB00FB2869 /* PaymentGateway.h */,
+				D1D7B8121F060EDB00FB2869 /* PaymentGateway.m */,
+				D1D7B8141F060FB900FB2869 /* StripePaymentService.h */,
+				D1D7B8151F060FB900FB2869 /* StripePaymentService.m */,
+				D1D7B8171F060FC600FB2869 /* PaypalPaymentService.h */,
+				D1D7B8181F060FC600FB2869 /* PaypalPaymentService.m */,
+				D1D7B81A1F060FCF00FB2869 /* AmazonPaymentService.h */,
+				D1D7B81B1F060FCF00FB2869 /* AmazonPaymentService.m */,
 			);
+			name = "Payment App";
 			path = Payments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D1D7B8061F060CB300FB2869 /* Payments */ = {
+		D1D7B8061F060CB300FB2869 /* Payment Apps */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D1D7B80E1F060CB300FB2869 /* Build configuration list for PBXNativeTarget "Payments" */;
+			buildConfigurationList = D1D7B80E1F060CB300FB2869 /* Build configuration list for PBXNativeTarget "Payment Apps" */;
 			buildPhases = (
 				D1D7B8031F060CB300FB2869 /* Sources */,
 				D1D7B8041F060CB300FB2869 /* Frameworks */,
@@ -77,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = Payments;
+			name = "Payment Apps";
 			productName = Payments;
-			productReference = D1D7B8071F060CB300FB2869 /* Payments */;
+			productReference = D1D7B8071F060CB300FB2869 /* Payment Apps */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +118,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D1D7B8021F060CB300FB2869 /* Build configuration list for PBXProject "Payments" */;
+			buildConfigurationList = D1D7B8021F060CB300FB2869 /* Build configuration list for PBXProject "Payment App" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -109,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D1D7B8061F060CB300FB2869 /* Payments */,
+				D1D7B8061F060CB300FB2869 /* Payment Apps */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +141,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1D7B80B1F060CB300FB2869 /* main.m in Sources */,
+				D1D7B81C1F060FCF00FB2869 /* AmazonPaymentService.m in Sources */,
+				D1D7B8161F060FB900FB2869 /* StripePaymentService.m in Sources */,
+				D1D7B8131F060EDB00FB2869 /* PaymentGateway.m in Sources */,
+				D1D7B8191F060FC600FB2869 /* PaypalPaymentService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D1D7B8021F060CB300FB2869 /* Build configuration list for PBXProject "Payments" */ = {
+		D1D7B8021F060CB300FB2869 /* Build configuration list for PBXProject "Payment App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1D7B80C1F060CB300FB2869 /* Debug */,
@@ -241,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D1D7B80E1F060CB300FB2869 /* Build configuration list for PBXNativeTarget "Payments" */ = {
+		D1D7B80E1F060CB300FB2869 /* Build configuration list for PBXNativeTarget "Payment Apps" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D1D7B80F1F060CB300FB2869 /* Debug */,

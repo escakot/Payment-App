@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Payments.xcodeproj">
+      location = "self:/Users/errolc/Desktop/Lighthouse Labs/Objective-C/Payments/Payment App.xcodeproj">
    </FileRef>
 </Workspace>
